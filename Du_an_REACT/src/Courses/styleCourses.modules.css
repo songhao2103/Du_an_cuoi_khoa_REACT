@@ -1,0 +1,71 @@
+.courses .bottom .contents {
+  width: 75%;
+}
+.courses .bottom .contents .top_contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.courses .bottom .contents .top_contents .title {
+  color: var(--Black, #000);
+  font-family: Exo;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 43.2px */
+  text-transform: capitalize;
+}
+.courses .bottom .contents .top_contents .right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.courses .bottom .contents .top_contents .right .box_input {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.courses .bottom .contents .top_contents .right .box_input input {
+  padding: 5px 15px;
+  border-bottom: 2px solid black;
+  width: 250px;
+  margin-right: 20px;
+}
+
+.courses .bottom .contents .top_contents .right .box_input .icon {
+  /* background-color: blue; */
+  position: absolute;
+  right: 0;
+}
+
+.courses .bottom .contents .top_contents .right .box_input .icon i {
+  font-size: 18px;
+}
+
+.courses .bottom .contents .top_contents .right .box_icon {
+  display: flex;
+  gap: 20px;
+}
+
+.courses .bottom .contents .top_contents .right .box_icon i {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.courses .bottom .contents .top_contents .right .box_icon i:hover {
+  color: var(--Primary);
+}
+
+.courses .bottom .contents .top_contents .right .box_icon i:active {
+  transform: scale(0.97);
+}
+
+/* ===========================list course============================ */
+
+.list_courses {
+  display: flex;
+  background-color: red;
+}

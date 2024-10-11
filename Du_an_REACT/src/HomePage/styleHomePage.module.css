@@ -1,0 +1,700 @@
+/* =============post comment========= */
+.post_comment {
+  display: flex;
+  position: relative;
+}
+
+.post_comment .bgc img {
+  width: 1920px;
+  height: 700px;
+  transform: translateX(-315px);
+}
+
+.post_comment .content {
+  display: flex;
+  position: absolute;
+  align-items: center;
+}
+
+.post_comment .content .comment {
+  width: 500px;
+  margin-right: 200px;
+}
+
+.post_comment .content .comment .title {
+  color: var(--Black, #000);
+  font-family: Exo;
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 120%; /* 57.6px */
+  text-transform: capitalize;
+  margin-bottom: 24px;
+}
+
+.post_comment .content .comment .desc {
+  margin-bottom: 20px;
+}
+
+/* ==================categories===================== ==================================*/
+.categories .top {
+  display: flex;
+  margin-top: 90px;
+  justify-content: space-between;
+}
+
+.categories .top .title {
+  color: var(--Black, #000);
+  font-family: Exo;
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 120%; /* 38.4px */
+  text-transform: capitalize;
+  margin-bottom: 12px;
+}
+
+.categories .top .right .btn {
+  background-color: white;
+  color: var(--Black);
+}
+
+.categories .top .right .btn:hover {
+  background-color: var(--Primary, #ff782d);
+  color: white;
+}
+
+.categories .list_categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.categories .list_categories .category {
+  display: flex;
+  width: 234px;
+  height: 234px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
+  box-shadow: 0px 0px 5px 1px rgba(107, 106, 106, 0.3);
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 10px;
+}
+
+.categories .list_categories .category:hover {
+  box-shadow: 0px 0px 5px 3px rgba(94, 93, 93, 0.3);
+  transform: translateY(-10px);
+}
+
+.categories .list_categories .category:hover .title {
+  color: var(--Primary);
+}
+
+.categories .list_categories .category .icon i {
+  font-size: 38px;
+  color: var(--Primary);
+}
+
+.categories .list_categories .category .content {
+  text-align: center;
+}
+
+.categories .list_categories .category .title {
+  color: var(--Black, #000);
+  font-family: Exo;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  text-transform: capitalize;
+  margin-bottom: 12px;
+}
+
+/* ====================List courses=============================================================== */
+
+.featured_courses {
+  margin-top: 90px;
+}
+.featured_courses .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.featured_courses .top .title {
+  color: var(--Black, #000);
+  font-family: Exo;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 38.4px */
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.featured_courses .top .right .btn {
+  background-color: white;
+  color: var(--Black);
+}
+
+.featured_courses .top .right .btn:hover {
+  background-color: var(--Primary, #ff782d);
+  color: white;
+}
+
+.list_courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  height: 1020px;
+  overflow: hidden;
+  padding-top: 30px;
+}
+
+.list_courses.view_all {
+  height: auto;
+  overflow: initial;
+}
+
+.cart_course {
+  display: flex;
+  width: 410px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 0px 0px 5px 3px rgba(107, 106, 106, 0.3);
+  transition: 0.3s;
+}
+.cart_course:hover {
+  transform: translateY(-15px);
+  box-shadow: 0px 0px 5px 6px rgba(90, 89, 89, 0.3);
+}
+.cart_course img {
+  transform: translate(-20px, -20px);
+  cursor: pointer;
+}
+
+.cart_course .content {
+  width: 100%;
+}
+.cart_course .content .desc span {
+  color: var(--Black, #000);
+  font-size: 1.8rem;
+}
+
+.cart_course .content .title {
+  color: var(--Black, #000);
+  font-family: Exo;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  text-transform: capitalize;
+  margin-top: 12px;
+}
+
+.cart_course:hover .content .title {
+  color: var(--Primary);
+}
+.cart_course .content .info {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 33px;
+}
+
+.cart_course .content .info .box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart_course .content .info .box .icon i {
+  color: var(--Primary);
+}
+
+.cart_course .content .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart_course .content .bottom .price {
+  display: flex;
+  gap: 8px;
+}
+.cart_course .content .bottom .price .old {
+  color: var(--Black, #9d9d9d);
+}
+
+.cart_course .content .bottom .price .old.sale {
+  color: var(--Grey, #9d9d9d);
+  text-decoration-line: line-through;
+}
+
+.cart_course .content .bottom .price .new {
+  color: var(--Red, #f51a1a);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.cart_course .content .bottom .price .new.free {
+  color: green;
+}
+
+.cart_course .content .bottom .view {
+  color: var(--Dark_gray);
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.cart_course .content .bottom .view:hover {
+  color: var(--Black);
+}
+
+.cart_course .content .bottom .view:active {
+  transform: scale(0.97);
+}
+
+/* =============================ADD ONS============================================================== */
+
+.add_ons {
+  background: url("https://songhao2103.github.io/IMG_du_an_REACT/img_/img_media/bgc_explorer_course.png");
+  width: 100%;
+  height: 324px;
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.add_ons .left {
+  width: 450px;
+}
+
+.add_ons .left .title {
+  color: var(--Black, #000);
+  font-family: Exo;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 38.4px */
+  text-transform: capitalize;
+  margin-top: 12px;
+}
+
+.add_ons .left .btn {
+  margin-top: 20px;
+}
+
+.add_ons .right {
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 70%;
+  overflow: hidden;
+}
+.add_ons .right .item {
+  padding: 15px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.add_ons .right .item1 {
+  top: 50px;
+  left: 100px;
+  background-color: blue;
+  transform: rotate(40deg);
+}
+
+.add_ons .right .item2 {
+  top: 200px;
+  left: 200px;
+  background-color: orangered;
+}
+
+.add_ons .right .item3 {
+  right: -10px;
+  background-color: rebeccapurple;
+  top: 100px;
+  transform: rotate(-20deg);
+}
+
+.add_ons .right .item4 {
+  background-color: #ca0404;
+  top: 150px;
+  left: 300px;
+  transform: rotate(-40deg);
+}
+
+.add_ons .right .item5 {
+  background-color: #197692;
+  top: 50px;
+  left: 400px;
+  transform: rotate(-60deg);
+}
+
+.add_ons .right .item6 {
+  background-color: #c111d1;
+  top: 200px;
+  left: 500px;
+  transform: rotate(40deg);
+}
+
+.add_ons .right .item7 {
+  background-color: #717533;
+  top: 130px;
+  left: 600px;
+  transform: rotate(-30deg);
+}
+
+.add_ons .right .item8 {
+  bottom: -20px;
+  background-color: #06045e;
+  left: 330px;
+  transform: rotate(-40deg);
+}
+
+/* ============================INFO EDU============================= */
+
+.info_edu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+
+.info_edu .info {
+  display: flex;
+  width: 300px;
+  padding: 50px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 20px;
+  background: var(--White_grey, #f5f5f5);
+}
+
+.info_edu .info .title {
+  color: var(--Primary, #ff782d);
+  font-family: Exo;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 38.4px */
+  text-transform: capitalize;
+}
+
+.info_edu .info .desc {
+  color: var(--Black, #000);
+  font-weight: 500;
+}
+
+/* ====================LearnPress LMS===================== */
+.learnPress_lms {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 125px;
+  margin-top: 90px;
+}
+
+.learnPress_lms .right .title {
+  color: var(--Black, #000);
+  font-family: Exo;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 38.4px */
+  text-transform: capitalize;
+  margin-bottom: 24px;
+}
+
+.learnPress_lms .right ul {
+  margin-top: 20px;
+}
+
+.learnPress_lms .right ul li::before {
+  content: "\f00c"; /* Unicode của biểu tượng dấu tích trong Font Awesome */
+  font-family: "Font Awesome 5 Free"; /* Font Family của Font Awesome */
+  font-weight: 900; /* Độ đậm của Font Awesome 5 Free */
+  color: green; /* Màu sắc của dấu tích */
+  margin-right: 10px; /* Khoảng cách giữa dấu tích và nội dung */
+}
+
+.learnPress_lms .right ul li {
+  margin-bottom: 12px;
+  color: var(--Black);
+}
+
+/* ======================Providing==================================================== */
+
+.providing {
+  display: flex;
+  justify-content: center;
+  background: url("https://songhao2103.github.io/IMG_du_an_REACT/img_/img_media/bgc_providing.png");
+  height: 300px;
+  position: relative;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: 90px;
+  overflow: hidden;
+}
+
+.providing .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.providing .desc:first-child {
+  color: var(--Black, #000);
+  text-align: center;
+  font-family: Exo;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 19.2px */
+  text-transform: capitalize;
+}
+
+.providing .title {
+  color: var(--Black, #000);
+  text-align: center;
+  font-family: Exo;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 38.4px */
+  text-transform: capitalize;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.providing .btn {
+  margin-top: 20px;
+}
+
+.providing .item {
+  position: absolute;
+}
+
+.providing .item1 {
+  top: 40px;
+  left: 80px;
+  z-index: 3;
+}
+
+.providing .item2 {
+  left: 0;
+  top: 0;
+}
+.providing .item3 {
+  left: 0;
+  bottom: 0;
+}
+
+.providing .item4 {
+  bottom: 0;
+  right: 10px;
+  z-index: 3;
+}
+
+.providing .item5 {
+  right: 0;
+  top: 60px;
+}
+
+.providing .item6 {
+  top: 0;
+  right: 100px;
+}
+
+/* =============================feedbacks============================= */
+
+.feedbacks {
+  margin-top: 90px;
+}
+
+.feedbacks .top .title {
+  color: var(--Black, #000);
+  text-align: center;
+  font-family: Exo;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 38.4px */
+  text-transform: capitalize;
+}
+
+.feedbacks .top .desc {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.feedbacks .list_feedbacks {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.feedbacks .list_feedbacks .item {
+  display: flex;
+  padding: 40px 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  border-radius: 20px;
+  border: 1px solid var(--Light_grey, #eaeaea);
+  background: var(--White, #fff);
+}
+
+.feedbacks .list_feedbacks .item .title {
+  color: var(--Black, #000);
+  font-family: Exo;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  text-transform: capitalize;
+}
+
+.feedbacks .list_feedbacks .item .icon {
+  display: flex;
+  gap: 8px;
+}
+
+.feedbacks .list_feedbacks .item .icon .slash {
+  width: 10px;
+  height: 32px;
+  background-color: rgb(177, 177, 177);
+  clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+  transform: rotate(25deg);
+}
+
+/* ======================Student======================= */
+.student {
+  display: flex;
+  justify-content: space-between;
+  background: url("https://songhao2103.github.io/IMG_du_an_REACT/img_/img_media/bgc_providing.png");
+  padding: 0 50px;
+  height: 250px;
+  border-radius: 20px;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.student .left {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.student .left .icon {
+  display: flex;
+  width: 120px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.student .left .desc {
+  color: var(--Black, #000);
+  font-family: Exo;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  text-transform: capitalize;
+}
+
+.student .right {
+  display: flex;
+  gap: 20px;
+}
+
+.student .right .btn:first-child {
+  background-color: transparent;
+  border: 1px solid var(--Primary);
+  color: var(--Primary);
+}
+
+/* ==============================articles================================ */
+.articles {
+  margin-top: 90px;
+}
+
+.articles .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.articles .top .left .title {
+  color: var(--Black, #000);
+  font-family: Exo;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 38.4px */
+  text-transform: capitalize;
+  margin-bottom: 12px;
+}
+.articles .top .right .btn {
+  background-color: white;
+  color: var(--Primary);
+}
+
+.articles .top .right .btn:hover {
+  background-color: var(--Primary);
+  color: white;
+}
+
+.list_articles {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.list_articles .item {
+  box-shadow: 0px 0px 5px 1px rgba(107, 106, 106, 0.3);
+  width: 410px;
+  border-radius: 20px;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.list_articles .item:hover {
+  transform: translateY(-20px);
+  box-shadow: 0px 0px 5px 5px rgba(92, 91, 91, 0.3);
+}
+.list_articles .item img {
+  transform: translate(-20px, -20px);
+}
+
+.list_articles .item .title {
+  color: var(--Black, #000);
+  font-family: Exo;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  text-transform: capitalize;
+}
+
+.list_articles .item .date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.list_articles .item .date .icon i {
+  color: var(--Primary);
+}
